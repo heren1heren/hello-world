@@ -1,0 +1,67 @@
+/* Variables
+ accent = '#29d8be'
+ background = '#07182e'
+ content-background = '#132945'
+ grey = '#6e7997'
+ White = #ffffff
+ text = '#cbd6f5' 
+ 
+ font
+ font-family: 'Oxygen',sans-serif
+ font-family: 'Oxygen Mono' monospace
+ */
+
+body {
+    font-size: 100%;
+}
+header,
+div,
+footer {
+    text-align: center;
+}
+a {
+    width: 296px;
+    border: 3px solid #29d8be;
+    border-radius: 1em;
+}
+a:link,
+a:visited {
+    background-color: white;
+
+    color: #29d8be;
+}
+a:hover,
+a:active {
+    background-color: #29d8be;
+    color: #132945;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+h1 {
+    font-size: 64px;
+}
+p {
+    font-size: 24px;
+}
+a {
+    font-size: 24px;
+    color: bg-c;
+}
+ol li:first-child {
+    font-size: 48px;
+}
+
+p,
+a {
+    margin-bottom: 32px;
+}
+
+footer {
+    margin-top: 32px;
+}
