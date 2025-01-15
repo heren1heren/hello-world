@@ -1,67 +1,97 @@
-/* Variables
- accent = '#29d8be'
- background = '#07182e'
- content-background = '#132945'
- grey = '#6e7997'
- White = #ffffff
- text = '#cbd6f5' 
- 
- font
- font-family: 'Oxygen',sans-serif
- font-family: 'Oxygen Mono' monospace
- */
+/* 
+    Colour Palette
+
+    Darkest – #07182E
+    Columns – #132945
+    Accent  – #29D8BE
+    Text    – #CBD6F5
+    Grey    – #6E7997
+    White   - #ffffff
+
+    Fonts
+
+    font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen Mono', monospace;
+
+    Layout Grid
+
+    Row Height is 16px.
+    Column Width is 296px.
+    Vertical Gutters are 18px.
+
+*/
 
 body {
     font-size: 100%;
+    background-color: #07182e;
+    color: #cbd6f5;
 }
+
 header,
 div,
 footer {
     text-align: center;
+    margin-bottom: 32px;
 }
-a {
-    width: 296px;
-    border: 3px solid #29d8be;
-    border-radius: 1em;
-}
-a:link,
-a:visited {
-    background-color: white;
-
-    color: #29d8be;
-}
-a:hover,
-a:active {
-    background-color: #29d8be;
-    color: #132945;
-}
-
 div {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 18px;
+    align-items: center;
+    gap: 32px;
+}
+div > a {
+    width: 296px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* *** Typographical Styles *** */
 h1 {
     font-size: 64px;
 }
-p {
-    font-size: 24px;
-}
-a {
-    font-size: 24px;
-    color: bg-c;
-}
-ol li:first-child {
-    font-size: 48px;
+h1,
+footer p {
+    color: #6e7997;
 }
 
 p,
 a {
+    font-size: 24px;
     margin-bottom: 32px;
 }
 
-footer {
-    margin-top: 32px;
+ol {
+    background-color: #132945;
+    padding: 30px 0;
+}
+ol li:first-child {
+    font-size: 36px;
+    color: #29d8be;
+}
+/* *** Navigation Treatments *** */
+a {
+    display: inline-block;
+    width: 296px;
+    border: 3px solid #29d8be;
+    border-radius: 16px;
+}
+
+a:link,
+a:visited {
+    background-color: #29d8be;
+    color: #163f54;
+}
+
+a:hover,
+a:active {
+    background-color: #f5f5f5;
+    color: #29d8be;
+}
+
+/* *** Developers Code *** */
+
+span {
+    color: #29d8be;
 }
